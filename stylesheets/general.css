@@ -1,0 +1,64 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/****GRID LAYOUT****/
+.main-section {
+  margin: unset;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr 5% minmax(0, 110ch) 5% 1fr;
+  /*minmax til midten på 110ch, fr'erne forsvinder mens man gør vinduet mindre*/
+
+  align-items: start;
+  > * {
+    grid-column: 3;
+  } /*stjerne for "alle", alle børn af body starter på grid column 3*/
+}
+
+/**VARIABLER**/
+:root {
+  /*baggrundsfarver*/
+  --header-bg-color: #d76748;
+  --main-section-bg-color: #eadcd0;
+  --footer-bg-color: #4d4d4d;
+
+  /*fonte*/
+  --h1-font: "Lobster", sans-serif;
+  --h2-font: "Lobster", sans-serif;
+  --h3-font: "Oswald", sans-serif;
+  --p-font: "Oswald", sans-serif;
+
+  /*tekst-størrelser*/
+  --h1-size: 3rem;
+  --h2-size: 1.8rem;
+  --h3-size: 1.5rem;
+  --p-size: 1.2rem;
+
+  --h1-weight: 600;
+  --h2-weight: 400;
+  --h3-weight: 400;
+  --p-weight: 350;
+}
+
+/*light-dark mode*/
+html {
+  color-scheme: light dark;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #f6e0a3;
+}
