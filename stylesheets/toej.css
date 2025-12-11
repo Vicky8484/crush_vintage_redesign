@@ -80,7 +80,7 @@
   }
 
   .toj-img-4 {
-    grid-row: 2/0.5;
+    /* grid-row: 2/1;*/
     display: block;
     border-radius: 20px;
   }
