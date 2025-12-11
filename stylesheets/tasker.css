@@ -1,6 +1,5 @@
 /*********** TASKER – MOBILE FIRST ***********/
 
-/* lidt spacing på overskrift & tekst */
 .tasker-page #main-section h1 {
   margin-bottom: 0.5rem;
 }
@@ -10,7 +9,10 @@
   max-width: 60ch;
 }
 
-/* GALLERI – mobil: én kolonne */
+.text-background {
+  text-align: center;
+}
+
 .tasker-gallery {
   display: grid;
   grid-template-columns: 1fr;
@@ -18,7 +20,6 @@
   margin-top: 1rem;
 }
 
-/* fælles billed-styling */
 .tasker-gallery img {
   width: 100%;
   height: auto;
@@ -35,13 +36,19 @@
 .center {
   text-align: center;
 }
-.text-background {
-  text-align: center;
+
+/* BILLEDER DER KUN SKAL VÆRE PÅ DESKTOP */
+img.desktop-only {
+  display: none; /* skjules som default = mobil */
 }
 
 /*********** DESKTOP (>= 800px) ***********/
-
 @media screen and (min-width: 800px) {
+  /* vis desktop-only billeder */
+  .desktop-only {
+    display: block;
+  }
+
   /* to kolonner – så billederne fylder mere */
   .tasker-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
