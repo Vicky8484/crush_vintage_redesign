@@ -18,12 +18,124 @@
 
     <link rel="stylesheet" href="stylesheets/general.css">
     <link rel="stylesheet" href="stylesheets/toej.css">
+
+    <style>
+        @media screen and (min-width: 800px) {
+            video {
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+                z-index: -100;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <!-- Rounded switch -->
+        <div>
+            <p class="da-en">DA/EN</p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+
+        <a href="index.html"><img class="crush-logo" src="./img/crush-logo_web.png" alt=""></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="toej.html">Tøj</a></li>
+                <li><a href="tasker.html">Tasker</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="om-os.html">Om Os</a></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div id="hero-section">
+            <video width="480" height="200" autoplay loop>
+                <source src="videoer/stopmotion-toej.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="main-section">
+            <div id="text-section">
+                <h1 class="center">Vores tøj</h1>
+                <p class="text-background">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia nulla at
+                    voluptatibus nostrum voluptates
+                    iure, excepturi omnis! Dicta maiores id perspiciatis consequuntur doloremque, voluptatibus nobis
+                    blanditiis rem illo quaerat veniam?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia nulla at voluptatibus nostrum
+                    voluptates
+                    iure, excepturi omnis! Dicta maiores id perspiciatis consequuntur doloremque, voluptatibus nobis
+                    blanditiis rem illo quaerat veniam?</p>
+            </div>
+            <div id="galleri-section">
+                <div>
+                    <img class="toj-mobil-1" src="./img/toej-img/toj-mobil-1.webp" alt="billede af tøj">
+                    <img class="toj-mobil-2" src="./img/toej-img/toj-mobil-2.webp" alt="billede af tøj">
+                    <img class="toj-mobil-3" src="./img/toej-img/toj-mobil-3.webp" alt="billede af tøj">
+                </div>
+                <div>
+                    <img class="toj-img-1" src="./img/toej-img/toj-grid-1.webp" alt="billede af tøj">
+                    <img class="toj-img-2" src="./img/toej-img/toj-grid-2.webp" alt="billede af tøj">
+                </div>
+                <div>
+
+                </div>
+                <img class="toj-img-3" src="./img/toej-img/toj-grid-3.webp" alt="billede af tøj">
+                <img class="toj-img-6" src="./img/toej-img/toj-grid-6.webp" alt="billede af tøj">
+
+                <img class="toj-img-4" src="./img/toej-img/toj-grid-4.webp" alt="billede af tøj">
+                <img class="toj-img-7" src="./img/toej-img/toj-grid-7.webp" alt="billede af tøj">
+                <img class="toj-img-5" src="./img/toej-img/toj-grid-5.webp" alt="billede af tøj">
+
+
+            </div>
+
+
+        </div>
+        <div id="ikon-section">
+            <a href="toej.html"><img class="scroll-to-top-ikon" src="img/scroll-to-top-ikon.png"
+                    alt="Scroll til toppen ikon"></a>
+            <a href="https://www.instagram.com/crushvintagecph/?hl=da"><img class="ikon" src="img/instagram-ikon.png"
+                    alt="Instagram ikon"></a>
+            <a href="https://www.facebook.com/crushcopenhagen/"><img class="ikon" src="img/facebook-ikon.png"
+                    alt="Facebook ikon"></a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-ikoner">
+            <img class="footer-ikon1" src="img/queer-ikon.png" alt="Queer ikon">
+            <a href="https://dk.trustpilot.com/review/crushvintage.eu?utm_medium=trustbox&utm_source=MicroReviewCount"><img
+                    class="footer-ikon2" src="img/trustpilot-ikon.png" alt="Trustpilot ikon"></a>
+        </div>
+        <div>
+            <a href="index.html"><img class="crush-logo" src="img/crush-logo_web.png" alt=""></a>
+            <p class="footer-text-desktop">© 2025, <a class="footer-link" href="index.html">CRU$H Vintage</a>, <a
+                    class="footer-link"
+                    href="https://www.shopify.com/dk?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore">c/o
+                    McKorman ApS - Nørrebrogade 5 - 2200 København N</a></p>
+        </div>
+        <div>
+            <img class="footer-ikon3" src="img/pay-ikoner-mobil.png" alt="Betalingsmetoder ikoner">
+            <img class="footer-ikon4" src="img/pay-ikoner-desktop.png" alt="Betalingsmetoder ikoner">
+        </div>
+        <div>
+            <p class="footer-text">© 2025, <a class="footer-link" href="index.html">CRU$H Vintage</a>, <a
+                    class="footer-link"
+                    href="https://www.shopify.com/dk?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore">c/o
+                    McKorman ApS - Nørrebrogade 5 - 2200 København N</a></p>
+        </div>
+    </footer>
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/login.js"></script>
 </body>
 
 </html>
