@@ -45,7 +45,7 @@ img.desktop-only {
 /*********** DESKTOP (>= 800px) ***********/
 @media screen and (min-width: 800px) {
   /* vis desktop-only billeder */
-  .desktop-only {
+  img.desktop-only {
     display: block;
   }
 
