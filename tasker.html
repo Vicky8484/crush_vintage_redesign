@@ -18,12 +18,132 @@
 
     <link rel="stylesheet" href="stylesheets/general.css">
     <link rel="stylesheet" href="stylesheets/tasker.css">
+
+    <style>
+        @media screen and (min-width: 800px) {
+            video {
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+                z-index: -100;
+            }
+        }
+    </style>
 </head>
 
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+<body class="tasker-page">
+    <header>
+        <!-- Language toggle -->
+        <div>
+            <p class="da-en">DA/EN</p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <a href="index.html">
+            <img class="crush-logo" src="img/crush-logo_web.png" alt="CRU$H Vintage logo">
+        </a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="toej.html">Tøj</a></li>
+                <li><a href="tasker.html">Tasker</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="om-os.html">Om os</a></li>
+            </ul>
+
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO-VIDEO -->
+        <div id="hero-section">
+            <video width="480" height="200" autoplay loop muted>
+                <source src="videoer/stopmotion_tasker.mp4" type="video/mp4">
+                Din browser understøtter ikke video-tagget.
+            </video>
+        </div>
+
+        <!-- INDHOLD -->
+        <div id="main-section">
+            <h1>Tasker</h1>
+
+            <p class="intro-text">
+                Hos CRU$H finder du håndplukkede vintage-tasker med masser af personlighed – fra klassiske
+                lædertasker til farverige statement bags. Her ser du et udsnit af butikkens udvalg.
+            </p>
+
+            <!-- GALLERI -->
+            <section class="tasker-gallery" aria-label="Galleri med vintage tasker fra CRU$H">
+
+                <!-- HERO – horisontalt billede øverst på tværs -->
+                <img class="img-hero" src="img/tasker/tasker-hero.webp" alt="Hylder med tasker foran farverig væg">
+
+                <!-- 2 små billeder -->
+                <img class="img-small" src="img/tasker/tasker-small-1.webp" alt="Vintage taske på farverig baggrund">
+
+                <img class="img-small" src="img/tasker/tasker-small-2.webp" alt="Hængende taske i butikken">
+
+                <!-- 2 medium billeder -->
+                <img class="img-medium" src="img/tasker/tasker-medium-1.webp" alt="Farverige tasker hængende på række">
+
+                <img class="img-medium" src="img/tasker/tasker-medium-2.webp" alt="Hylde med tasker i varme farver">
+
+                <!-- bredt billede nederst -->
+                <img class="img-wide" src="img/tasker/tasker-wide.webp" alt="Bred hylde med forskellige tasker">
+
+            </section>
+        </div>
+
+        <!-- IKON-SECTION -->
+        <div id="ikon-section">
+            <a href="tasker.html">
+                <img class="scroll-to-top-ikon" src="img/scroll-to-top-ikon.png" alt="Scroll til toppen ikon">
+            </a>
+            <img class="ikon" src="img/instagram-ikon.png" alt="Instagram ikon">
+            <img class="ikon" src="img/facebook-ikon.png" alt="Facebook ikon">
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-ikoner">
+            <img class="footer-ikon1" src="img/queer-ikon.png" alt="Queer ikon">
+            <a href="https://dk.trustpilot.com/review/crushvintage.eu?utm_medium=trustbox&utm_source=MicroReviewCount">
+                <img class="footer-ikon2" src="img/trustpilot-ikon.png" alt="Trustpilot ikon">
+            </a>
+        </div>
+
+        <div>
+            <a href="index.html">
+                <img class="crush-logo" src="img/crush-logo_web.png" alt="CRU$H Vintage logo">
+            </a>
+            <p class="footer-text-desktop">
+                © 2025, CRU$H Vintage, Nørrebrogade 5, 2200 København N
+            </p>
+        </div>
+
+        <div>
+            <img class="footer-ikon3" src="img/pay-ikoner-mobil.png" alt="Betalingsmetoder ikoner">
+            <img class="footer-ikon4" src="img/pay-ikoner-desktop.png" alt="Betalingsmetoder ikoner">
+        </div>
+
+        <div>
+            <p class="footer-text">
+                © 2025, CRU$H Vintage, Nørrebrogade 5, 2200 København N
+            </p>
+        </div>
+    </footer>
+
+    <script src="javascript/menu.js"></script>
     <script src="javascript/login.js"></script>
 </body>
 
