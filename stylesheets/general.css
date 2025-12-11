@@ -48,6 +48,15 @@ img {
   --h2-weight: 400;
   --h3-weight: 400;
   --p-weight: 350;
+
+  /*tekst-farver*/
+  --h1-color: #ffff;
+  --h2-color: #ffff;
+  --h3-color: #ffff;
+  --p-color: black;
+
+  /*baggrundsfarver til p-text*/
+  --text-bg-color: #faf0e8;
 }
 
 /*light-dark mode*/
@@ -264,83 +273,40 @@ footer {
   justify-items: center;
 }
 
-@media screen and (min-width: 800px) {
-  header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-  }
-
-  #ikon-section {
-    background-color: light-dark(#518a88, #bd4396);
-    padding: 2.3rem;
-  }
-
-  .da-en {
-    display: inline;
-  }
-  .crush-logo {
-    width: 250px;
-    justify-self: center;
-  }
-  footer {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-    justify-items: center;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-  }
-  .footer-text {
-    text-align: left;
-    display: none;
-  }
-  .footer-text-desktop {
-    padding-top: 0.5rem;
-    color: grey;
-    text-align: center;
-    padding-bottom: 1rem;
-    display: block;
-  }
-  .footer-ikon3 {
-    display: none;
-  }
-  .footer-ikon4 {
-    padding-top: 1rem;
-    width: 200px;
-    display: block;
-  }
-  /*hero-videoer desktop*/
-  video {
-    /*width: 1700px;*/
-    /*height: 800;*/
-    display: block;
-    margin: auto;
-    text-align: center;
-  }
-}
-
 /*FONTE OG FONT-STØRRELSER*/
 h1 {
   font-family: var(--h1-font);
   font-size: var(--h1-size);
   font-weight: var(--h1-weight);
+  color: var(--h1-color);
+  text-shadow: 6px 6px 3px black;
 }
 
 h2 {
   font-family: var(--h2-font);
   font-size: var(--h2-size);
+  color: var(--h2-color);
 }
 
 p {
   font-family: var(--p-font);
   font-size: var(--p-size);
   font-weight: var(--p-weight);
+  color: var(--p-color);
 }
 
 li {
   font-family: var(--p-font);
   font-size: var(--p-size);
   font-weight: var(--p-weight);
+}
+
+.text-background {
+  background-color: var(--text-bg-color);
+  padding: 3rem;
+  margin-top: 1rem;
+  color: var(--p-color);
+  border-radius: 30px;
 }
 
 /**SITE-PROGRESS ANIMATION PÅ ALLE SIDER*/
@@ -429,4 +395,64 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/*ALT HVAD DER ÆNDRER SIG I DESKTOP FORMAT ER HERINDE*/
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 5rem;
+    text-shadow: 8px 6px 3px black;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  #ikon-section {
+    background-color: light-dark(#518a88, #bd4396);
+    padding: 2.3rem;
+  }
+
+  .da-en {
+    display: inline;
+  }
+  .crush-logo {
+    width: 250px;
+    justify-self: center;
+  }
+  footer {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .footer-text {
+    text-align: left;
+    display: none;
+  }
+  .footer-text-desktop {
+    padding-top: 0.5rem;
+    color: grey;
+    text-align: center;
+    padding-bottom: 1rem;
+    display: block;
+  }
+  .footer-ikon3 {
+    display: none;
+  }
+  .footer-ikon4 {
+    padding-top: 1rem;
+    width: 200px;
+    display: block;
+  }
+  /*hero-videoer desktop*/
+  video {
+    /*width: 1700px;*/
+    /*height: 800;*/
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
 }
