@@ -18,41 +18,134 @@
 
     <link rel="stylesheet" href="stylesheets/general.css">
     <link rel="stylesheet" href="stylesheets/accessories.css">
+
+    <style>
+        @media screen and (min-width: 800px) {
+            video {
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+                z-index: -100;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="accessories-page">
     <header>
+        <!-- Language toggle -->
+        <div>
+            <p class="da-en">DA/EN</p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
 
+        <a href="index.html">
+            <img class="crush-logo" src="img/crush-logo_web.png" alt="CRU$H Vintage logo">
+        </a>
 
+        <nav>
+            <ul class="menu">
+                <li><a href="toej.html">Tøj</a></li>
+                <li><a href="tasker.html">Tasker</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="om-os.html">Om os</a></li>
+            </ul>
 
-
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
     </header>
+
     <main>
-        <video src=""></video>
 
-        <h1>HI!</h1>
-        <section class="tekst-accesories">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis inventore ipsa blanditiis
-                reprehenderit, harum similique adipisci eos deserunt animi quia in molestiae aliquid totam assumenda
-                iusto earum saepe doloribus.</p>
-        </section>
+        <!-- HERO-VIDEO -->
+        <div id="hero-section">
+            <video width="480" height="200" autoplay loop muted>
+                <source src="videoer/stopmotion-accessories-hero.mp4" type="video/mp4">
+                Din browser understøtter ikke video-tagget.
+            </video>
+        </div>
 
-        <section class="grid_1-1">
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
+        <!-- INDHOLD -->
+        <div id="main-section">
+            <div id="text-section">
+                <h1 class="center">Accessories</h1>
+                <p class="text-background">Hos CRU$H finder du en massse forskellige accessories til, at style enhvert
+                    outfit du ønsker – fra fede
+                    sollbriller til vinterhatte til de kolde tider.</p>
             </div>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
+            <!-- GALLERI -->
+            <div class="galleri-section">
+                <div class="grid-1-1">
+                    <img class="accesories-mobil-1" src="Billeder-accesories/solbriller.webp"
+                        alt="billede af accesories">
+                    <img class="accessories-mobil-2" src="Billeder-accesories/chains.webp" alt="billede af accesories">
+                    <img class="accesories-mobil-3" src="Billeder-accesories/wristband.jpg" alt="billede af accesories">
+                    <img class="accesories-mobil-4" src="Billeder-accesories/slips.webp" alt="billede af accesories">
+                </div>
 
-        </section>
+                <div class="grid-1-1-1">
+                    <img class="accesories-img-1" src="Billeder-accesories/solbriller.webp" alt="billede af accesories">
+                    <img class="accesories-img-2" src="Billeder-accesories/hat.webp" alt="billede af tøj">
+                    <img class="accesories-img-3" src="Billeder-accesories/slips.webp" alt="billede af tøj">
+                    <img class="accesories-img-4" src="Billeder-accesories/wristband.jpg" alt="billede af tøj">
+                    <img class="accesories-img-5" src="Billeder-accesories/mask.webp" alt="billede af tøj">
+                    <img class="accesories-img-6" src="Billeder-accesories/chains.webp" alt="billede af tøj">
+                    <img class="accesories-img-7" src="Billeder-accesories/belts.webp" alt="billede af tøj">
+                    <img class="accesories-img-8" src="Billeder-accesories/smykker.webp" alt="billede af tøj">
+                    <img class="accesories-img-9" src="Billeder-accesories/keychain.webp" alt="billede af tøj">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- IKON-SECTION -->
+        <div id="ikon-section">
+            <a href="tasker.html">
+                <img class="scroll-to-top-ikon" src="img/scroll-to-top-ikon.png" alt="Scroll til toppen ikon">
+            </a>
+            <img class="ikon" src="img/instagram-ikon.png" alt="Instagram ikon">
+            <img class="ikon" src="img/facebook-ikon.png" alt="Facebook ikon">
+        </div>
 
     </main>
-    <footer>
 
+
+    <footer>
+        <div class="footer-ikoner">
+            <img class="footer-ikon1" src="img/queer-ikon.png" alt="Queer ikon">
+            <a href="https://dk.trustpilot.com/review/crushvintage.eu?utm_medium=trustbox&utm_source=MicroReviewCount">
+                <img class="footer-ikon2" src="img/trustpilot-ikon.png" alt="Trustpilot ikon">
+            </a>
+        </div>
+
+        <div>
+            <a href="index.html">
+                <img class="crush-logo" src="img/crush-logo_web.png" alt="CRU$H Vintage logo">
+            </a>
+            <p class="footer-text-desktop">
+                © 2025, CRU$H Vintage, Nørrebrogade 5, 2200 København N
+            </p>
+        </div>
+
+        <div>
+            <img class="footer-ikon3" src="img/pay-ikoner-mobil.png" alt="Betalingsmetoder ikoner">
+            <img class="footer-ikon4" src="img/pay-ikoner-desktop.png" alt="Betalingsmetoder ikoner">
+        </div>
+
+        <div>
+            <p class="footer-text">
+                © 2025, CRU$H Vintage, Nørrebrogade 5, 2200 København N
+            </p>
+        </div>
     </footer>
+    <script src="javascript/menu.js"></script>
     <script src="javascript/login.js"></script>
 </body>
 
