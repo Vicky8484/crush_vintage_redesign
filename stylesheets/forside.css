@@ -1,0 +1,76 @@
+.forside_hero_img {
+  width: 480px;
+  height: 200px;
+  border-radius: 30px;
+  padding: 1rem;
+  padding-top: 0;
+  margin: 1rem;
+  justify-self: center;
+  object-fit: cover;
+}
+.h1 {
+  text-align: center;
+}
+.p_1 {
+  background-color: #faf0e8;
+  border-radius: 30px;
+  padding: 1rem;
+  margin: 1rem;
+  justify-self: center;
+}
+.toej_link_forside {
+  border-radius: 30px;
+  padding: 1rem;
+  margin: 1rem;
+  justify-self: center;
+}
+.tasker_link_forside {
+  border-radius: 30px;
+  padding: 1rem;
+  margin: 1rem;
+  justify-self: center;
+}
+.assecc_link_forside {
+  border-radius: 30px;
+  padding: 1rem;
+  margin: 1rem;
+  justify-self: center;
+}
+.aabningstider_menu {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+.aabningstider_bar {
+  background-color: #ff4893;
+  border-radius: 30px;
+  justify-self: center;
+  width: 380px;
+  color: white;
+  font-family: "Lobster", sans-serif;
+}
+.aabningstider_tider {
+  background-color: #ffabcd;
+  border-radius: 30px;
+  justify-self: center;
+  width: 380px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.review_h2_forside {
+  text-align: center;
+  color: white;
+  padding-top: 1rem;
+}
+.review_section {
+  background-color: #faf0e8;
+  border-radius: 30px;
+  padding: 1rem;
+  margin: 1rem;
+  justify-self: center;
+}
+.review1_christian_h {
+  text-align: center;
+}
+.review1_navn_platform {
+  text-align: center;
+}
