@@ -40,11 +40,11 @@ img {
 
   /*tekst-størrelser*/
   --h1-size: 3rem;
-  --h2-size: 1.8rem;
+  --h2-size: 1.5rem;
   --h3-size: 1.5rem;
   --p-size: 1.2rem;
 
-  --h1-weight: 600;
+  --h1-weight: 400;
   --h2-weight: 400;
   --h3-weight: 400;
   --p-weight: 350;
@@ -401,7 +401,7 @@ input:checked + .slider:before {
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 5rem;
-    text-shadow: 8px 6px 3px black;
+    text-shadow: 8px 6px 3px rgba(0, 0, 0, 0.44);
   }
   header {
     display: grid;
