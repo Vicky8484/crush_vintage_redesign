@@ -8,10 +8,18 @@
   justify-self: center;
   object-fit: cover;
 }
+.mid_left {
+  position: absolute;
+  top: 120px;
+  left: 35px;
+  background-color: #ff4893;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
 .h1 {
   text-align: center;
 }
-.p_1 {
+.text_background {
   background-color: #faf0e8;
   border-radius: 30px;
   padding: 1rem;
@@ -42,19 +50,23 @@
 }
 .aabningstider_bar {
   background-color: #ff4893;
-  border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   justify-self: center;
   width: 380px;
   color: white;
   font-family: "Lobster", sans-serif;
+  padding: 0.5rem;
 }
 .aabningstider_tider {
   background-color: #ffabcd;
-  border-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   justify-self: center;
   width: 380px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  list-style: none;
 }
 .review_h2_forside {
   text-align: center;
