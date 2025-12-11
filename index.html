@@ -18,12 +18,139 @@
 
     <link rel="stylesheet" href="stylesheets/general.css">
     <link rel="stylesheet" href="stylesheets/forside.css">
+    <style>
+        @media screen and (min-width: 800px) {
+            video {
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+                z-index: -100;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <!-- Rounded switch -->
+        <div>
+            <p class="da-en">DA/EN</p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <a href="index.html"><img class="crush-logo" src="./img/crush-logo_web.png" alt=""></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="toej.html">Tøj</a></li>
+                <li><a href="tasker.html">Tasker</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="om-os.html">Om Os</a></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div id="hero-section">
+            <img class="forside_hero_img" src="img/forside-hero-img-welcome.webp" alt="Welcome to Las Vegas">
+        </div>
+        <div id="main-section">
+            <div id="text-section">
+                <h1 class="h1">Velkommen til CRU$H Vintage!</h1>
+                <p class="p_1">Din ultimative destination for unikke vintage tøj, tasker og accessories. Vi er en lille
+                    butik i hjertet
+                    af København,
+                    hvor vores passion for vintage mode og vores engagement i bæredygtighed mødes i en unik oplevelse
+                    for
+                    vores kunder. Men CRU$H Vintage er mere end bare en butik. Vores butik er designet til at være en
+                    oplevelse. Med en
+                    indretning
+                    inspireret af den livlige og farverige atmosfære fra Las Vegas, vil du føle dig transporteret til en
+                    anden tid og et
+                    andet sted, når du træder ind i vores butik. Hvert hjørne er fyldt med skatte fra fortiden, og der
+                    er
+                    altid noget nyt at
+                    opdage og udforske.</p>
+            </div>
+            <div id="links-section">
+                <a href="toej.html">
+                    <img class="toej_link_forside" src="img/forside_toejlink_img.webp" alt="Toej billede link">
+                </a>
+                <a href="tasker.html">
+                    <img class="tasker_link_forside" src="img/forside_taskerlink_img.webp" alt="Tasker billede link">
+                </a>
+                <a href="accessories.html">
+                    <img class="assecc_link_forside" src="img/forside_accessorieslink_img.webp"
+                        alt="Accessories billede link">
+                </a>
+            </div>
+            <div id="time-section">
+                <!--
+                Source - https://stackoverflow.com/a
+                Posted by Ananth, modified by community. See post 'Timeline' for change history
+                Retrieved 2025-12-10, License - CC BY-SA 4.0
+                -->
+
+                <details class="aabningstider_menu">
+                    <summary class="aabningstider_bar">Butikkens åbningstider:</summary>
+                    <ul class="aabningstider_tider">
+                        <li>Mandag: kl. 10 - 18</li>
+                        <li>Tirsdag: kl. 10 - 18</li>
+                        <li>Onsdag: kl. 10 - 18</li>
+                        <li>Torsdag: kl. 10 - 18</li>
+                        <li>Fredag: kl. 10 - 18</li>
+                        <li>Lørdag: kl. 10 - 18</li>
+                        <li>Søndag: kl. 12 - 17</li>
+                    </ul>
+                </details>
+            </div>
+            <div id="review+section">
+                <h2 class="review_h2_forside">Hvad synes vores CHRUSHERS?</h2>
+                <div class="review_section">
+                    <p class="review1_christian_h">Dejlig gengrugsbutik med et godt udvalg af vintagetøj, absolut et
+                        besøg
+                        værd.</p>
+                    <p class="review1_navn_platform">Christian H. / Google Reviews</p>
+                </div>
+            </div>
+        </div>
+        <div id="ikon-section">
+            <a href="toej.html"><img class="scroll-to-top-ikon" src="img/scroll-to-top-ikon.png"
+                    alt="Scroll til toppen ikon"></a>
+            <img class="ikon" src="img/instagram-ikon.png" alt="Instagram ikon">
+            <img class="ikon" src="img/facebook-ikon.png" alt="Facebook ikon">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-ikoner">
+            <img class="footer-ikon1" src="img/queer-ikon.png" alt="Queer ikon">
+            <a href="https://dk.trustpilot.com/review/crushvintage.eu?utm_medium=trustbox&utm_source=MicroReviewCount"><img
+                    class="footer-ikon2" src="img/trustpilot-ikon.png" alt="Trustpilot ikon"></a>
+        </div>
+        <div>
+            <a href="index.html"><img class="crush-logo" src="img/crush-logo_web.png" alt=""></a>
+            <p class="footer-text-desktop">© 2025, <a class="footer-link" href="index.html">CRU$H Vintage</a>, <a
+                    class="footer-link"
+                    href="https://www.shopify.com/dk?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore">c/o
+                    McKorman ApS - Nørrebrogade 5 - 2200 København N</a></p>
+        </div>
+        <div>
+            <img class="footer-ikon3" src="img/pay-ikoner-mobil.png" alt="Betalingsmetoder ikoner">
+            <img class="footer-ikon4" src="img/pay-ikoner-desktop.png" alt="Betalingsmetoder ikoner">
+        </div>
+        <div>
+            <p class="footer-text">© 2025, <a class="footer-link" href="index.html">CRU$H Vintage</a>, <a
+                    class="footer-link"
+                    href="https://www.shopify.com/dk?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore">c/o
+                    McKorman ApS - Nørrebrogade 5 - 2200 København N</a></p>
+        </div>
+    </footer>
+    <script src="javascript/menu.js"></script>
     <script src="javascript/login.js"></script>
 </body>
 
