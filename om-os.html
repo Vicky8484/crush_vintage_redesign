@@ -47,81 +47,85 @@
             </button>
         </nav>
     </header>
-    <main id="main-section">
+    <main>
 
-        <h1>About Us</h1>
+        <div id="main-section">
 
-        <section class="main">
+            <h1>About Us</h1>
 
-            <div class="textsection">
-                <p class="textP1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eligendi
-                    nesciunt
-                    consequatur
-                    repudiandae. Voluptas harum voluptatum aperiam repellat. Eum, impedit similique. Error
-                    voluptatum
-                    facilis molestiae sunt eveniet ut aperiam voluptate!</p>
-                <p class="textP2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eligendi
-                    nesciunt
-                    consequatur
-                    repudiandae. Voluptas harum voluptatum aperiam repellat. Eum, impedit similique. Error
-                    voluptatum
-                    facilis molestiae sunt eveniet ut aperiam voluptate!</p>
+            <div class="main">
+
+                <div class="textsection">
+                    <p class="textP1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eligendi
+                        nesciunt
+                        consequatur
+                        repudiandae. Voluptas harum voluptatum aperiam repellat. Eum, impedit similique. Error
+                        voluptatum
+                        facilis molestiae sunt eveniet ut aperiam voluptate!</p>
+                    <p class="textP2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eligendi
+                        nesciunt
+                        consequatur
+                        repudiandae. Voluptas harum voluptatum aperiam repellat. Eum, impedit similique. Error
+                        voluptatum
+                        facilis molestiae sunt eveniet ut aperiam voluptate!</p>
+                </div>
+
             </div>
 
-        </section>
-
-        <section class="img section">
-            <div class="billeder">
-                <img class="billede1" src="img/OmOs_billeder/OmOS_billeder1.webp" alt="billede1">
-                <img class="billede2" src="img/OmOs_billeder/OmOs_billeder2.webp" alt="billede2">
+            <div class="img section">
+                <div class="billeder">
+                    <img class="billede1" src="img/OmOs_billeder/OmOS_billeder1.webp" alt="billede1">
+                    <img class="billede2" src="img/OmOs_billeder/OmOs_billeder2.webp" alt="billede2">
+                </div>
             </div>
-        </section>
 
-        <section class="textsection2">
-            <h2 class="subscribe">Subscribe Til Vores Newsletter!</h2>
-            <p class="subText">Vær den første til at høre om alt det nye fra CRUSH. Med en subskription til vores
-                newsletter får du
-                opdateringer
-                vedrørende nye tilbud og produkter.</p>
-        </section>
+            <div class="textsection2">
+                <h2 class="subscribe">Subscribe Til Vores Newsletter!</h2>
+                <p class="subText">Vær den første til at høre om alt det nye fra CRUSH. Med en subskription til vores
+                    newsletter får du
+                    opdateringer
+                    vedrørende nye tilbud og produkter.</p>
+            </div>
 
-        <section id="form-section">
-            <form id="webform">
+            <div id="form-section">
+                <form id="webform">
 
-                <h2 class="oplysninger">Oplysninger</h2>
+                    <h2 class="oplysninger">Oplysninger</h2>
 
-                <div class="names">
-                    <div class="form-field">
-                        <label for="first_name">Fornavn:</label>
-                        <input type="text" id="first_name" required>
+                    <div class="names">
+                        <div class="form-field">
+                            <label for="first_name">Fornavn:</label>
+                            <input type="text" id="first_name" required>
+                            <span class="fejlmeddelelse"></span>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="last_name">Efternavn:</label>
+                            <input type="text" id="last_name" required>
+                            <span class="fejlmeddelelse"></span>
+                        </div>
+                    </div>
+
+                    <div class="telephone">
+                        <label for="tele-num">Telefon nummer:</label>
+                        <input type="text" id="tele-num" required>
                         <span class="fejlmeddelelse"></span>
                     </div>
 
-                    <div class="form-field">
-                        <label for="last_name">Efternavn:</label>
-                        <input type="text" id="last_name" required>
-                        <span class="fejlmeddelelse"></span>
+                    <div class="mail">
+                        <label for="Email">Email:</label>
+                        <input id="Email" type="email" name="Email" required>
+                        <span class="fejlmeddelelseemail"></span>
                     </div>
-                </div>
 
-                <div class="telephone">
-                    <label for="tele-num">Telefon nummer:</label>
-                    <input type="text" id="tele-num" required>
-                    <span class="fejlmeddelelse"></span>
-                </div>
+            </div>
 
-                <div class="mail">
-                    <label for="Email">Email:</label>
-                    <input id="Email" type="email" name="Email" required>
-                    <span class="fejlmeddelelseemail"></span>
-                </div>
-
+            <div>
+                <button class="button" type="submit">SIGN UP</button>
+            </div>
             </form>
-        </section>
 
-        <section>
-            <button class="button" type="submit">SIGN UP</button>
-        </section>
+        </div>
 
         <div id="ikon-section">
             <a href="om-os.html"><img class="scroll-to-top-ikon" src="img/scroll-to-top-ikon.png"

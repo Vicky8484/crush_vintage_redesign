@@ -53,7 +53,7 @@ h1 {
 
 .textsection2 {
   background-color: #faf0e8;
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   border-radius: 30px;
   margin: 1.5rem auto;
@@ -67,14 +67,14 @@ h1 {
 }
 
 #form-section {
-  max-width: unset;
+  max-width: 400px;
   width: 95%;
 }
 
 /*************** Forms ***************/
 
 .oplysninger {
-  padding-left: 1.3rem;
+  padding-left: 2rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
   color: black;
@@ -86,6 +86,7 @@ input {
   width: 12rem;
   color: black;
   font-size: 1rem;
+  padding: 15px;
 }
 
 .names {
@@ -131,28 +132,6 @@ input {
   padding-bottom: 1.5rem;
 }
 
-/*
-.checkbox-linje {
-  display: flex;
-  margin: 1rem 3rem 1rem 0;
-  margin-right: 3rem;
-  margin-left: 0rem;
-}
-
-.checkbox-linje label {
-  color: black;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
-
-#accepter {
-  margin-left: 2rem;
-  margin-bottom: 3.5rem;
-  background-color: white;
-  margin-top: 1.5rem;
-} */
-
 input {
   background-color: white;
 }
@@ -176,11 +155,13 @@ label {
   background-color: #ff4893;
   color: white;
   border-color: black;
+  margin-bottom: 6rem;
+  max-width: 450px;
 }
 
 /*************** Desktop ***************/
 
-@media (min-width: 950px) {
+@media (min-width: 800px) {
   .main {
     max-width: 750px;
     padding: 0.7rem;
@@ -193,7 +174,8 @@ label {
 
   #form-section {
     max-width: 750px;
-    padding-bottom: 2rem;
+    padding: 0.7rem;
+    padding-bottom: 2.5rem;
   }
 
   .oplysninger {
@@ -205,16 +187,16 @@ label {
   .names {
     flex-direction: row;
     gap: 20px;
-    padding-left: 5rem;
+    justify-self: center;
   }
 
   .telephone {
-    padding-left: 5rem;
+    justify-self: center;
     padding-top: 0.5rem;
   }
 
   .mail {
-    padding-left: 5rem;
+    justify-self: center;
     padding-top: 0.5rem;
     padding-bottom: 1.5rem;
   }
@@ -236,24 +218,11 @@ label {
   }
 
   .button {
-    width: 730px;
+    width: 700px;
     height: 5.5rem;
     font-size: 1.7rem;
-  }
-
-  .checkbox-linje {
-    padding-left: 3.5rem;
-    padding-bottom: 2rem;
-  }
-
-  .checkbox-linje label {
-    padding-top: 0.3rem;
-    padding-right: 14rem;
-  }
-
-  #form-section {
-    max-width: unset;
-    width: 75%;
+    max-width: 700px;
+    margin-bottom: 8rem;
   }
 
   .billeder {
@@ -265,6 +234,7 @@ label {
   .billede2 {
     padding: 1rem;
     width: 45%;
+    max-width: 750px;
   }
 
   .billeder {
@@ -278,7 +248,7 @@ label {
 /*************** Effetcs ***************/
 
 input:hover {
-  background-color: rgb(255, 192, 225);
+  background-color: rgb(192, 255, 242);
 }
 
 input:user-invalid {
@@ -295,11 +265,7 @@ input:user-invalid + span::before {
 }
 
 .button:hover {
-  background-color: rgb(106, 153, 255);
-}
-
-#main-section > #ikon-section {
-  grid-column: 3 !important;
+  background-color: rgb(248, 125, 225);
 }
 
 /*************** Billeder ***************/
@@ -307,9 +273,13 @@ input:user-invalid + span::before {
 .billede1 {
   padding: 1rem;
   border-radius: 30px;
+  max-width: 450px;
+  justify-self: center;
 }
 .billede2 {
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 30px;
+  max-width: 450px;
+  justify-self: center;
 }
