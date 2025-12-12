@@ -28,9 +28,9 @@ img {
 /**VARIABLER**/
 :root {
   /*baggrundsfarver*/
-  --header-bg-color: light-dark(#d76748, #e44039);
-  --main-section-bg-color: light-dark(#f6e0a3, #bd4396);
-  --footer-bg-color: light-dark(#4d4d4d, #393939);
+  --header-bg-color: #d76748;
+  --main-section-bg-color: #f6e0a3;
+  --footer-bg-color: #4d4d4d;
 
   /*fonte*/
   --h1-font: "Lobster", sans-serif;
@@ -70,7 +70,7 @@ html.dark {
 
 /*body er bag de andre sections og er ensfarvet i gradientens start-farve*/
 body {
-  background-color: light-dark(#f6e0a3, #bd4396);
+  background-color: #f6e0a3;
 }
 
 /*HEADER - ENS PÅ ALLE SIDER*/
@@ -202,7 +202,7 @@ header {
 }
 
 #ikon-section {
-  background-color: light-dark(#518a88, #bd4396);
+  background-color: #518a88;
   padding: 1rem;
 }
 
@@ -253,7 +253,7 @@ video {
 }
 .footer-text {
   padding-top: 0.5rem;
-  color: light-dark(grey, #bda7c9);
+  color: grey;
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -261,11 +261,11 @@ video {
   display: none;
 }
 .footer-link {
-  color: light-dark(grey, #bda7c9);
+  color: grey;
   text-decoration: none;
 }
 .footer-link:hover {
-  color: light-dark(#7fffd4, #00f3ef);
+  color: #7fffd4;
 }
 
 footer {
@@ -368,7 +368,7 @@ html::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: light-dark(#7fffd4, #01075e);
+  background-color: #7fffd4;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -380,13 +380,13 @@ html::before {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: light-dark(#f9cf4a, #ffff);
+  background-color: #f9cf4a;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: light-dark(#518a88, #bd4396);
+  background-color: #518a88;
 }
 
 input:focus + .slider {
@@ -421,7 +421,7 @@ input:checked + .slider:before {
   }
 
   #ikon-section {
-    background-color: light-dark(#518a88, #bd4396);
+    background-color: #518a88;
     padding: 2.3rem;
   }
 
