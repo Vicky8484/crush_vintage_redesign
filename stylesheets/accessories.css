@@ -4,6 +4,7 @@
 
 #galleri-section {
   padding-top: 2rem;
+  padding-bottom: 0rem;
   display: grid;
   gap: 5px;
 }
@@ -11,25 +12,34 @@
 .grid-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-top: 1rem;
 }
 /*billeder der vises i mobil*/
 .accesories-mobil-1 {
   display: block;
   border-radius: 20px;
+  grid-row: 1 / 3;
+  aspect-ratio: 3 / 5;
+  object-fit: cover;
 }
+
 .accessories-mobil-2 {
   display: block;
   border-radius: 20px;
+  aspect-ratio: 273 / 220;
 }
 .accessories-mobil-3 {
   display: block;
-  grid-column: 1 / span 2;
   border-radius: 20px;
 }
-.accessories-mobil-4 {
+.accesories-mobil-4 {
   display: block;
-  grid-column: 1 / span 2;
   border-radius: 20px;
+  object-fit: cover;
+  grid-row: 2 / 4;
+  grid-column: 2 / 3;
+  aspect-ratio: 273 / 440;
 }
 
 /*billeder som ikke vises i mobil*/
@@ -68,16 +78,21 @@
   .accessories-mobil-2 {
     display: none;
   }
-  .accesories-mobil-3 {
+  .accessories-mobil-3 {
     display: none;
   }
   .accesories-mobil-4 {
     display: none;
   }
+  .grid-1-1 {
+    padding-top: 0rem;
+  }
 
   .grid-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 1rem;
+    padding-top: 1rem;
   }
 
   .accesories-img-1 {
@@ -88,6 +103,7 @@
   .accesories-img-2 {
     display: block;
     border-radius: 20px;
+    aspect-ratio: 293.32 / 260.7;
   }
 
   .accesories-img-3 {
@@ -103,6 +119,7 @@
   .accesories-img-5 {
     display: block;
     border-radius: 20px;
+    aspect-ratio: 293.32 / 260.73;
   }
 
   .accesories-img-6 {
@@ -113,13 +130,16 @@
   .accesories-img-7 {
     display: block;
     border-radius: 20px;
+    aspect-ratio: 194.54 / 180;
   }
   .accesories-img-8 {
     display: block;
     border-radius: 20px;
+    aspect-ratio: 293.32 / 180;
   }
   .accesories-img-9 {
     display: block;
     border-radius: 20px;
+    aspect-ratio: 194.54 / 180;
   }
 }
