@@ -12,6 +12,9 @@
 .h1 {
   text-align: center;
 }
+#links-section img:hover {
+  scale: 1.05;
+}
 .toej_link_forside {
   border-radius: 30px;
   padding: 1rem;
@@ -54,10 +57,20 @@
   padding-bottom: 0.5rem;
   list-style: none;
 }
+.container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+.review_section {
+  padding: 0.5rem;
+  flex-basis: 65%;
+  flex-shrink: 0;
+}
 .review_h2_forside {
   text-align: center;
   color: white;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 .review_section {
   background-color: #faf0e8;
@@ -66,12 +79,13 @@
   margin: 1rem;
   justify-self: center;
 }
-.review1_stars {
+.review_stars {
   text-align: center;
 }
-.review1_christian_h {
+.review {
   text-align: center;
 }
-.review1_navn_platform {
+.review_navn_platform {
   text-align: center;
+  font-weight: bold;
 }
