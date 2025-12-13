@@ -1,11 +1,28 @@
 .center {
   text-align: center;
 }
+/*ANIMATIONER*/
 
-.gal-section-mobil {
+@keyframes slide-1 {
+  0% /*(from)*/ {
+    opacity: 0;
+    translate: -8rem; /*gør at den rykker ind 8rem fra billedets "slut-position"*/
+    /*translate: -20vw; /*gør at det bruger hele skærmen*/
+    /*rotate: -5deg; /*gør at den rotere ind*/
+  }
+}
+@keyframes slide-2 {
+  0% /*(from)*/ {
+    opacity: 0;
+    translate: 8rem; /*gør at den rykker ind 8rem fra billedets "slut-position"*/
+    /*translate: 20vw; /*gør at det bruger hele skærmen*/
+    /*rotate: 5deg; /*gør at den rotere ind*/
+  }
+}
+
+.galleri-underdiv-0 {
   padding-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 5px;
   display: block;
 }
@@ -14,15 +31,33 @@
 .toj-mobil-1 {
   display: block;
   border-radius: 20px;
+  padding-bottom: 10px;
+  animation: slide-1 /*3s*/ ease-out both /*bare sig both*/;
+  animation-timeline: view(); /*gør at det styres når den kommer ind i vores synsfelt, i stedet for når vi scroller*/
+  animation-range: 0% 55%;
 }
 .toj-mobil-2 {
   display: block;
   border-radius: 20px;
+  padding-bottom: 10px;
+  animation: slide-2 /*3s*/ ease-out both /*bare sig both*/;
+  animation-timeline: view(); /*gør at det styres når den kommer ind i vores synsfelt, i stedet for når vi scroller*/
+  animation-range: 0% 55%;
 }
 .toj-mobil-3 {
   display: block;
-  grid-column: 1 / span 2;
   border-radius: 20px;
+  padding-bottom: 10px;
+  animation: slide-1 /*3s*/ ease-out both /*bare sig both*/;
+  animation-timeline: view(); /*gør at det styres når den kommer ind i vores synsfelt, i stedet for når vi scroller*/
+  animation-range: 0% 55%;
+}
+.toj-mobil-4 {
+  display: block;
+  border-radius: 20px;
+  animation: slide-2 /*3s*/ ease-out both /*bare sig both*/;
+  animation-timeline: view(); /*gør at det styres når den kommer ind i vores synsfelt, i stedet for når vi scroller*/
+  animation-range: 0% 55%;
 }
 
 /*billeder som ikke vises i mobil*/
@@ -59,7 +94,7 @@
     display: none;
   }
 
-  .gal-section-mobil {
+  .galleri-underdiv-0 {
     display: none;
   }
 
@@ -68,32 +103,37 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
     padding-top: 2rem;
-    gap: 5px;
-  }
-
-  .galleri-underdiv-1 {
-    gap: 30px;
+    gap: 10px;
   }
 
   .toj-img-1 {
     display: block;
     border-radius: 20px;
+    padding-bottom: 10px;
+    animation: slide-1 /*3s*/ ease-out both /*bare sig both*/;
+    animation-timeline: view(); /*gør at det styres når den kommer ind i vores synsfelt, i stedet for når vi scroller*/
+    animation-range: 0% 30%;
   }
 
   .toj-img-2 {
     display: block;
     border-radius: 20px;
+    animation: slide-1 /*3s*/ ease-out both /*bare sig both*/;
+    animation-timeline: view(); /*gør at det styres når den kommer ind i vores synsfelt, i stedet for når vi scroller*/
+    animation-range: 0% 20%;
   }
 
   .toj-img-3 {
     display: block;
     border-radius: 20px;
+    padding-bottom: 10px;
   }
 
   .toj-img-4 {
     /* grid-row: 2/1;*/
     display: block;
     border-radius: 20px;
+    padding-bottom: 10px;
   }
 
   .toj-img-5 {
@@ -104,10 +144,17 @@
   .toj-img-6 {
     display: block;
     border-radius: 20px;
+    padding-bottom: 6px;
+    animation: slide-2 /*3s*/ ease-out both /*bare sig both*/;
+    animation-timeline: view(); /*gør at det styres når den kommer ind i vores synsfelt, i stedet for når vi scroller*/
+    animation-range: 0% 40%;
   }
 
   .toj-img-7 {
     display: block;
     border-radius: 20px;
+    animation: slide-2 /*3s*/ ease-out both /*bare sig both*/;
+    animation-timeline: view(); /*gør at det styres når den kommer ind i vores synsfelt, i stedet for når vi scroller*/
+    animation-range: 0% 20%;
   }
 }
